@@ -11,11 +11,11 @@ GENERATION_LIMIT = 100
 """Generation iteration limit.
 """
 
-POPULATION_SIZE = 50
+POPULATION_SIZE = 250
 """Number of chromosomes within the population.
 """
 
-CROSSOVER_METHOD = 'PMX'
+CROSSOVER_METHOD = 'OBX'
 """Algorithm for the crossover operation. Can be PMX, OBX or RANDOM.
 """
 
@@ -30,15 +30,15 @@ NUMBER_TOURNAMENT_SELECTION = 2
 PROBABILITY_ELITISM = 0.2
 
 
-PROBABILITY_MUTATION = 0.4
+PROBABILITY_MUTATION = 0
 """Probability for a chromosome to mutate.
 """
 
-NUMBER_VEHICLES = 5
+NUMBER_VEHICLES = 3
 """Number of vehicles.
 """
 
-CVRP_INSTANCE = 'data/A-n32-k5.vrp'
+CVRP_INSTANCE = '../data/A-n32-k5.vrp'
 """Path to a CVRP instance file.
 """
 COORDINATES_DEPOT = None
@@ -60,7 +60,7 @@ if __name__ == "__main__":
     else:
         # Generate random data
         customers, vehicles_capacity = generate_data(
-            num_customers=1000,
+            num_customers=10,
             min_distance=100,
             max_distance=150,
             min_demand=0,

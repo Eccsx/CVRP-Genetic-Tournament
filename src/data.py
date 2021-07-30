@@ -138,7 +138,8 @@ def load_instance(path):
         d.append(description.strip())
 
     # Instance customers
-    customers = [tuple([int(x[i]), int(y[i]), int(d[i])]) for i in range(len(x))]
+    customers = [tuple([int(x[i]), int(y[i]), int(d[i])])
+                 for i in range(len(x))]
 
     # Instance depot
     depot = customers.pop(0)[:2]
