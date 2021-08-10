@@ -3,6 +3,14 @@ import numpy as np
 
 
 def create_shuffle_array(n):
+    """Create a shuffle array of integer from 0 to n.
+
+    Args:
+        n (int): positive integer
+
+    Returns:
+        list: shuffle array
+    """
     a = list(range(n))
     shuffle(a)
     return a

@@ -7,15 +7,15 @@ from numpy import VisibleDeprecationWarning
 import warnings
 warnings.filterwarnings("ignore", category=VisibleDeprecationWarning)
 
-GENERATION_LIMIT = 100
+GENERATION_LIMIT = 10000
 """Generation iteration limit.
 """
 
-POPULATION_SIZE = 250
+POPULATION_SIZE = 200
 """Number of chromosomes within the population.
 """
 
-CROSSOVER_METHOD = 'OBX'
+CROSSOVER_METHOD = 'RANDOM'
 """Algorithm for the crossover operation. Can be PMX, OBX or RANDOM.
 """
 
@@ -27,10 +27,10 @@ NUMBER_TOURNAMENT_SELECTION = 2
 """Number of chromosomes select during the tournament.
 """
 
-PROBABILITY_ELITISM = 0.2
+PROBABILITY_ELITISM = 0.5
 
 
-PROBABILITY_MUTATION = 0
+PROBABILITY_MUTATION = 1
 """Probability for a chromosome to mutate.
 """
 

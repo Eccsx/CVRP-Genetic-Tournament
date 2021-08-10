@@ -142,6 +142,6 @@ def load_instance(path):
                  for i in range(len(x))]
 
     # Instance depot
-    depot = customers.pop(0)[:2]
+    depot = (1, -1)
 
     return name, dimension, fleet, capacity, depot, customers, optimal
