@@ -7,15 +7,15 @@ from numpy import VisibleDeprecationWarning
 import warnings
 warnings.filterwarnings("ignore", category=VisibleDeprecationWarning)
 
-GENERATION_LIMIT = 10000
+GENERATION_LIMIT = 100
 """Generation iteration limit.
 """
 
-POPULATION_SIZE = 200
+POPULATION_SIZE = 50
 """Number of chromosomes within the population.
 """
 
-CROSSOVER_METHOD = 'RANDOM'
+CROSSOVER_METHOD = 'OBX'
 """Algorithm for the crossover operation. Can be PMX, OBX or RANDOM.
 """
 
